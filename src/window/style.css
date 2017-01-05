@@ -1,0 +1,35 @@
+.header-button {
+	-fx-background-color: #01A9DB;
+	-fx-padding: 0 0 3 0;
+	-fx-background-radius: 10;
+	
+	-fx-text-fill: white;
+	-fx-font-size: 14pt;
+        
+}
+.header-button:hover {
+	-fx-background-color: #01A9DB;
+	-fx-padding: 0 0 0 0;
+	-fx-background-color: linear-gradient(from 0% 95% to 0% 100%, #01A9DB 0%, #045FB4 100%)
+}
+
+.filterbar {
+	
+	
+	-fx-background-color: linear-gradient(from 0% 4% to 0% 6%, #e3e3e3 99%, #F2F2F2),
+	linear-gradient(from 0% 94% to 0% 96%, #F2F2F2 99%,  #f4f4f4 );
+	-fx-prompt-text-fill: #0B3861;
+	-fx-font-size: 14pt;
+	-fx-padding: 7 0 0 5;
+	-fx-background-radius: 10;
+	
+}
+
+
+.infotextwindow {
+	-fx-font-size: 14pt;
+	-fx-background-color: #F2F2F2;
+	-fx-padding: 4 4 4 4;
+	-fx-background-radius: 10;
+	
+}
