@@ -186,7 +186,7 @@ public class Main extends Application{
 			table.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 			table.getSelectionModel().selectedItemProperty().addListener((obs, oldselection, newselection) -> {
 				if(newselection != null){
-					movieinfotxt.setText("Dieser Film besitzt keine Bschreibung.");
+					movieinfotxt.setText("Dieser Film besitzt keine Beschreibung.");
 					System.out.println(newselection.getTitle());
 					if(newselection != oldselection){
 						Thread searchthread = new Thread(new Runnable() {

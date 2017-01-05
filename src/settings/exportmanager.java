@@ -21,11 +21,11 @@ public class exportmanager {
 		filechooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Textdatei", ".txt"));
 		filechooser.setSelectedExtensionFilter(new FileChooser.ExtensionFilter("Textdatei", ".txt"));
 		f = filechooser.showSaveDialog(s);
-		if(f != null){
+		if(f != null && !f.toString().trim().isEmpty()){
 			try {
 				PrintWriter out = new PrintWriter(f);
 				for(Movie m:table.getSelectionModel().getSelectedItems()){
-					out.print(m.getID()+" - "+m.getTitle());
+					out.print(m.getTitle());
 					out.print(" | FSK: "+m.getFSK());
 					if(m.getLength() > 0){
 						out.print(" | Länge: "+m.getLength());
